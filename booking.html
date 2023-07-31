@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hair Day Home </title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Booking</title>
+    <meta property="og:type"  content="website">
+    <meta property="og:image" content="logo1.png">
+    <meta property="og:url"   content="https://hairday/booking">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Hair Day">
+</head>
+<body>
+  <header>
+    <img id="mainlogo" class="mainlogo" src="images/longlogo.png">
+  </header>
+  <nav>
+    <ul style="display: flex;justify-content: space-evenly;">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="index.html">Products</a></li>
+        <li><a href="index.html">Info</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="conatiner1" class="container1">
+      <form method="post">
+<!-- email address input -->
+        <div class="email">
+          <label for="email_address"> Email Address:</label>
+          <input type="email" class="emailaddress" id="email_address" name="email_address"> 
+        </div>
+<!-- below is creating a drop down calander -->
+        <div class="inputz">
+          <label for="booking_date">Booking Date</label>
+          <input type="date" class="bookingdate" id="booking_date" name="booking_date"> 
+        </div>
+<!-- below is the silder for number of people changing range to number will vreate a user input -->
+        <div class="inputz">
+          <label for="booking_people">Number Of People</label>
+          <input type="range" id="booking_people" name="booking_people" min="1" max="8" value="4" oninput="this.nextElementSibling.value = this.value">
+          <output>4</output>
+        </div>
+<!-- checkbox for agreement notice required on the side -->
+        <div class="inputz">
+          <label for="text"> I agree to the cancellation policy</label>
+          <input type="checkbox" class="Agree" id="Agree" name="Agree" required>
+        </div>
+        <div class="booknow">
+          <button type="submit" class="reg">Book Now</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
